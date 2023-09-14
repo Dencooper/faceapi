@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Nhận diện khuôn mặt</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <style>
+        #container {
+            width: 100%;
+            text-align: center;
+            margin-top: 30px;
+            position: relative;
+        }
+
+        #container img{
+            width: 500px;
+            height: auto;
+            position: absolute;
+            top: 0;
+            left: 35%;
+        }
+
+        #container canvas{
+            position: absolute;
+            top: 0;
+            left: 35%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Nhận diên khuôn mặt</h1>
+    <input type="file" id="file-input">
+
+    <div id="container"></div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/face-api.js@0.22.2/dist/face-api.js" integrity="sha256-JOJ7NmVm2chxYZ1KPcAYd2bwVK7NaFj9QKMp7DClews=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script src="script.js"></script>
+</html>
